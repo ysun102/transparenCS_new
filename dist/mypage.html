@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TCS Website</title>
+
+    <!-- 
+
+Sentra Template
+
+http://www.templatemo.com/tm-518-sentra
+
+-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma@0.9.2/js/bulma.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body style="height: 100vh;">
+
+
+
+    <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--/.navbar-header-->
+        <div id="main-nav" class="collapse navbar-collapse">
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li><a href="#top">New side bar</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#projects">Recent Projects</a></li>
+                    <li><a href="#video">Presentation</a></li>
+                    <li><a href="#blog">Blog Entries</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="sidebar-navigation hidde-sm hidden-xs" style="top:0%;height: 100%;padding-top: 20%;">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">
+                        <!-- <span class="circle"></span> -->
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#featured">
+                        <!-- <span class="circle"></span> -->
+                        About the creators/ contributors
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <span class="circle"></span>
+                        Beginner's guides
+                    </a>
+                </li>
+                <li>
+                    <a href="#video">
+                        <span class="circle"></span>
+                        Learn to code
+                    </a>
+                </li>
+                <li>
+                    <a href="#blog">
+                        <span class="circle"></span>
+                        Find community
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="circle"></span>
+                        CS at Wellesley
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="circle"></span>
+                        Find jobs and internships
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="circle"></span>
+                        Find IDEs
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="circle"></span>
+                        Website building
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="circle"></span>
+                        Find nonprofits
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="circle"></span>
+                        Find newsletters
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="circle"></span>
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content-section content-section-landing" id="home">
+
+        <section style="height: 100%;padding-left: 21%;padding-top: 7%;">
+
+            <div class="Welcome"
+                style="width: auto; justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex; margin-top: -110px">
+                <div class="Frame224"
+                    style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+                    <div class="Title"
+                        style="width: 420px;color: black;font-size: 45px;font-weight: 500;text-align: left;word-wrap: break-word;">
+                        Welcome to TransparenCS!
+
+                    </div>
+                    <div class="Welcome-text"
+                        style="width: 400px;color: black;font-size: 18px;font-weight: 400;line-height: 28.12px;word-wrap: break-word;text-align: left;">
+                        TCS is here for all your CS needs. Feel free to select what you're looking for--or explore
+                        what you might need.
+                    </div>
+                </div>
+
+                <img class="landing-image">
+            </div>
+
+
+            <div
+                style="top: 63%;left: 27%;position: absolute;justify-content: left;text-align: left;gap: -2px;display: inline-flex;flex-direction: column;">
+                <div class="columns" style="top:65%">
+                    <div class="column is-4">
+                        Start with...
+                    </div>
+                    <div class="column is-6 is-offset-1">
+                        <div class="dropdown has-background-light" id="startwith">
+                            <div class="dropdown-trigger">
+                                <button class="button" id="startwithdrop" aria-haspopup="true"
+                                    aria-controls="dropdown-menu">
+                                    <span>
+                                        Learn to code
+                                    </span>
+                                    <span class="icon is-small">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <a href="#" class="dropdown-item">
+                                        Access Beginner's Guides
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a class="dropdown-item">
+                                        Learn to code
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#" class="dropdown-item is-active">
+                                        Find jobs and internships
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#" class="dropdown-item">
+                                        Find community
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#" class="dropdown-item">
+                                        Find Wellesley-specific resources
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-5 is-offset-1">
+
+                        <button> confirm </button>
+                    </div>
+                </div>
+
+                <div class="columns" style="/* position: absolute; */top:75%">
+                    <div class="column is-4">
+                        Dig deeper into...
+                    </div>
+                    <div class="column is-6 is-offset-1">
+                        <div class="dropdown" id="digdeeper">
+                            <div class="dropdown-trigger">
+                                <button class="button" id="digdeeperdrop" aria-haspopup="true"
+                                    aria-controls="dropdown-menu">
+                                    <span>Select section</span>
+                                    <span class="icon is-small">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <a href="#" class="dropdown-item">
+                                        Find IDEs
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a class="dropdown-item">
+                                        Build a website
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#" class="dropdown-item is-active">
+                                        Find nonprofits
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#" class="dropdown-item">
+                                        Find newsletters
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-offset-1">
+                        <button> confirm </button>
+                    </div>
+                </div>
+
+                <div class="columns" style="/* position: absolute; */top:85%">
+                    <div class="column is-4">
+                        Search here:
+                    </div>
+                    <div class="column is-6 is-offset-1">
+                        <p class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Search...">
+                            <span class="icon is-right">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="column is-offset-1">
+                        <button> confirm </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <div class="page-content">
+        <section id="featured" class="content-section">
+            <div class="section-heading">
+                <h1><em>If you're just beginning...</em></h1>
+                <h4 style="margin-top:5%;margin-bottom: -5%;">Your fellow Wellesley students have crafted beginner's
+                    guide on different CS programming languages and concepts just for you! Check them out...</h4>
+                <button style="left: 98%;position: absolute;top: 20%;width: 9%;"
+                    onclick="window.location.href='resources.html'">See all</button>
+            </div>
+            <div class="section-content">
+                <div class="owl-carousel owl-theme">
+
+                    <div class="item">
+                        <div class="card"
+                            style="width: 100%; height: 60%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                            <img src="img/white.jpg"
+                                style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                            <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;"><b>Research
+                                    Opportunities in CS!</b></div>
+                            <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By Eveline
+                                Buestan</div>
+
+                            <div class="container">
+
+                                <div style="height: 40%;">
+                                    <p style="color: black;padding-top: 5%;">If you're interested in CS research,
+                                        there's tons of research opportunities for you
+                                        at Wellesley!</p>
+
+
+                                </div>
+
+                            </div>
+                            <div
+                                style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
+
+                                <button class="tags"
+                                    style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                    <div
+                                        style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                        View tags</div>
+                                </button>
+                                <button class="VisitSite"
+                                    style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                    <div
+                                        style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                        VISIT SITE</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card"
+                            style="width: 100%; height: 60%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                            <img src="img/white.jpg"
+                                style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                            <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;"><b>Research
+                                    Opportunities in CS!</b></div>
+                            <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By Eveline
+                                Buestan</div>
+
+                            <div class="container">
+
+                                <div style="height: 40%;">
+                                    <p style="color: black;padding-top: 5%;">If you're interested in CS research,
+                                        there's tons of research opportunities for you
+                                        at Wellesley!</p>
+                                </div>
+                            </div>
+                            <div
+                                style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
+
+                                <button class="tags"
+                                    style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                    <div
+                                        style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                        View tags</div>
+                                </button>
+                                <button class="VisitSite"
+                                    style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                    <div
+                                        style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                        VISIT SITE</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resource cade template -->
+                    <div class="item">
+                        <div class="card"
+                            style="width: 100%; height: 60%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                            <img src="img/codecademy.png"
+                                style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                            <div class="guide-title"
+                                style="position: absolute; bottom: 80%; left: 16px; padding: 10px; background-color: white; border: 1px solid black; border-radius: 30px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); color: black;">
+                                <b>Codecademy</b>
+                            </div>
+
+                            <div class="container">
+
+                                <div style="height: 40%;">
+                                    <p style="color: black;padding-top: 5%;">
+                                        Stories and courses for developers! Many of the courses offered are free!</p>
+                                </div>
+                            </div>
+                            <div
+                                style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
+                                <button class="tags"
+                                    style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                    <div
+                                        style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                        View tags</div>
+                                </button>
+                                <button class="VisitSite"
+                                    style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                    <div
+                                        style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                        VISIT SITE</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="card"
+                            style="width: 100%; height: 60%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                            <img src="img/white.jpg"
+                                style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                            <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;"><b>Research
+                                    Opportunities in CS!</b></div>
+                            <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By Eveline
+                                Buestan</div>
+
+                            <div class="container">
+
+                                <div style="height: 40%;">
+                                    <p style="color: black;padding-top: 5%;">If you're interested in CS research,
+                                        there's tons of research opportunities for you
+                                        at Wellesley!</p>
+
+                                    <div>
+
+                                        <button class="tags"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                View tags</div>
+                                        </button>
+                                        <button class="VisitSite"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                VISIT SITE</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="card"
+                            style="width: 100%; height: 60%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                            <img src="img/white.jpg"
+                                style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                            <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;"><b>Research
+                                    Opportunities in CS!</b></div>
+                            <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By Eveline
+                                Buestan</div>
+
+                            <div class="container">
+
+                                <div style="height: 40%;">
+                                    <p style="color: black;padding-top: 5%;">
+                                        If you're interested in CS research,
+                                        there's tons of research opportunities for you
+                                        at Wellesley!</p>
+
+                                    <div>
+
+                                        <button class="tags"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                View tags</div>
+                                        </button>
+                                        <button class="VisitSite"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 8px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                VISIT SITE</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+        <section id="projects" class="content-section">
+            <div class="section-heading">
+                <h1>Recent<br><em>Projects</em></h1>
+                <p>Praesent pellentesque efficitur magna,
+                    <br>sed pellentesque neque malesuada vitae.
+                </p>
+            </div>
+            <div class="section-content">
+                <div class="masonry">
+                    <div class="row">
+                        <div class="item">
+                            <div class="col-md-8">
+                                <a href="img/portfolio_big_1.jpg" data-lightbox="image"><img src="img/portfolio_1.jpg"
+                                        alt="image 1"></a>
+                            </div>
+                        </div>
+                        <div class="item second-item">
+                            <div class="col-md-4">
+                                <a href="img/portfolio_big_2.jpg" data-lightbox="image"><img src="img/portfolio_2.jpg"
+                                        alt="image 2"></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-4">
+                                <a href="img/portfolio_big_3.jpg" data-lightbox="image"><img src="img/portfolio_3.jpg"
+                                        alt="image 3"></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-4">
+                                <a href="img/portfolio_big_4.jpg" data-lightbox="image"><img src="img/portfolio_4.jpg"
+                                        alt="image 4"></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-8">
+                                <a href="img/portfolio_big_5.jpg" data-lightbox="image"><img src="img/portfolio_5.jpg"
+                                        alt="image 5"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="video" class="content-section">
+
+            hi
+            <hr>
+            <hr>
+
+            <hr>
+
+            <hr>
+
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+
+
+        </section>
+        <section id="blog" class="content-section">
+            <div class="section-heading">
+                <h1>Blog<br><em>Entries</em></h1>
+                <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum.
+                    <br>Phasellus luctus odio eget dui imperdiet.
+                </p>
+            </div>
+            <div class="section-content">
+                <div class="tabs-content">
+                    <div class="wrapper">
+                        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                            <li><a href="#tab1" class="active">July 2018</a></li>
+                            <li><a href="#tab2">June 2018</a></li>
+                            <li><a href="#tab3">May 2018</a></li>
+                            <li><a href="#tab4">April 2018</a></li>
+                        </ul>
+                        <section id="first-tab-group" class="tabgroup">
+                            <div id="tab1">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/featured_1.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Integer ultrices augue</h4>
+                                                <span>25 July 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/featured_2.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Cras commodo odio ut</h4>
+                                                <span>16 July 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/featured_3.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Sed at massa turpis</h4>
+                                                <span>10 July 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab2">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/featured_1.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Sed at massa turpis</h4>
+                                                <span>30 June 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_1.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Lorem ipsum dolor sit</h4>
+                                                <span>24 June 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_2.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Cras commodo odio ut</h4>
+                                                <span>12 June 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab3">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_2.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Cras commodo odio ut</h4>
+                                                <span>26 May 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_1.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Lorem ipsum dolor sit</h4>
+                                                <span>22 May 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_3.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Integer ultrices augue</h4>
+                                                <span>8 May 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab4">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_1.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Lorem ipsum dolor sit</h4>
+                                                <span>26 April 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_3.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Integer ultrices augue eu</h4>
+                                                <span>24 April 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_2.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Cras commodo odio ut</h4>
+                                                <span>20 April 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="content-section">
+            <!-- <div id="map"> -->
+
+            <!-- How to change your own map point
+                           1. Go to Google Maps
+                           2. Click on your location point
+                           3. Click "Share" and choose "Embed map" tab
+                           4. Copy only URL and paste it within the src="" field below
+                    -->
+            <!-- <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907"
+                    width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div> -->
+            <div id="contact-content">
+                <div class="section-heading">
+                    <h1>Contact<br><em>Sentra</em></h1>
+                    <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum.
+                        <br>Phasellus luctus odio eget dui imperdiet.
+                    </p>
+
+                </div>
+                <div class="section-content">
+                    <form id="contact" action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name"
+                                        placeholder="Your name..." required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email"
+                                        placeholder="Your email..." required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset>
+                                    <input name="subject" type="text" class="form-control" id="subject"
+                                        placeholder="Subject..." required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message"
+                                        placeholder="Your message..." required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <p>Copyright &copy; 2018. Design: <a href="http://templatemo.com/tm-518-sentra" target="_blank">Sentra</a> |
+                Distribution: <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
+        </section>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+</body>
+
+</html>
