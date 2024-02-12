@@ -1,0 +1,69 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* .Welcome {
+    margin-left: 132px;
+} */
+
+/* .Title {
+    margin-bottom: 32px;
+} */
+
+.button-navigation {
+    margin-top: 57px;
+}
+
+.arrow-down {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.article-navigation {
+    margin-right: 40px;
+    width: fit-content;
+    height: 61px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: black;
+    color: white;
+}
+
+.article-text, .signature {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.guide-title {
+    text-align:left;
+    margin-bottom: 52px;
+    font-size: 40px;
+}
+
+.article-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin-left: 97px;
+    margin-right: 105px;
+}
+
+.article-section, #home {
+    border-bottom: 1px solid #eee;
+}
+
+.guide-list {
+    list-style: inside;
+}
+
+.signature {
+    text-align: right;
+}
+.section-text{
+    display: inline-block;
+}
+
+#contact-text {
+    display: block;
+    position: relative;
+    width: 462px;
+}
