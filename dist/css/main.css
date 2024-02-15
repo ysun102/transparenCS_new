@@ -1,0 +1,20 @@
+.highlight-nav {
+    background-color: white;
+}
+
+.highlight-text {
+    color: black !important;
+}
+
+.tab-content {
+    margin-top: 5%;
+}
+
+.title {
+    width: 420px;
+    color: black;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: left;
+    word-wrap: break-word;
+}
