@@ -20,26 +20,26 @@ jQuery(document).ready(function ($) {
     //     nextArrow:'<button class="NextArrow"></button>', 
     //   });
 
-    // $('#nav-toggle').on('click', function (event) {
-    //     event.preventDefault();
-    //     $('#main-nav').toggleClass("open");
-    // });
+    $('#nav-toggle').on('click', function (event) {
+        event.preventDefault();
+        $('#main-nav').toggleClass("open");
+    });
 
 
-    // $('.tabgroup > div').hide();
-    //     $('.tabgroup > div:first-of-type').show();
-    //     $('.tabs a').click(function(e){
-    //       e.preventDefault();
-    //         var $this = $(this),
-    //         tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-    //         others = $this.closest('li').siblings().children('a'),
-    //         target = $this.attr('href');
-    //     others.removeClass('active');
-    //     $this.addClass('active');
-    //     $(tabgroup).children('div').hide();
-    //     $(target).show();
+    $('.tabgroup > div').hide();
+        $('.tabgroup > div:first-of-type').show();
+        $('.tabs a').click(function(e){
+          e.preventDefault();
+            var $this = $(this),
+            tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+            others = $this.closest('li').siblings().children('a'),
+            target = $this.attr('href');
+        others.removeClass('active');
+        $this.addClass('active');
+        $(tabgroup).children('div').hide();
+        $(target).show();
 
-    // })
+    })
 
 
 
@@ -70,13 +70,13 @@ jQuery(document).ready(function ($) {
     });
 
 
-    $('.tabs ul li').click(function () {
-        // Remove 'is-active' class from all tabs
-        $('.tabs ul li').removeClass('is-active');
+    // $('.tabs ul li').click(function () {
+    //     // Remove 'is-active' class from all tabs
+    //     $('.tabs ul li').removeClass('is-active');
 
-        // Add 'is-active' class to the clicked tab
-        $(this).addClass('is-active');
-    });
+    //     // Add 'is-active' class to the clicked tab
+    //     $(this).addClass('is-active');
+    // });
 
     // $('.tabs ul li a').click(function (e) {
     //     e.preventDefault();
@@ -86,7 +86,9 @@ jQuery(document).ready(function ($) {
     //     $(target).show();
     // });
 
-    
+    $('#progButton').click(function(){
+        $('.tab-content').html='';
+    })
 
 
 
@@ -140,40 +142,40 @@ jQuery(document).ready(function ($) {
     // });
 
 
-    // $('#startwithdrop').on('click', function (event) {
-    //     event.preventDefault();
-    //     $('#startwith').addClass("is-active");
+    $('#startwithdrop').on('click', function (event) {
+        event.preventDefault();
+        $('#startwith').addClass("is-active");
 
-    //     $('#startwith .dropdown-content').on('click', function (event) {
-    //         event.stopPropagation();
-    //         $('#startwithdrop').find('span:first-child').text($(event.target).text());
-    //         $('#startwith').removeClass("is-active");
-    //     });
-    // });
+        $('#startwith .dropdown-content').on('click', function (event) {
+            event.stopPropagation();
+            $('#startwithdrop').find('span:first-child').text($(event.target).text());
+            $('#startwith').removeClass("is-active");
+        });
+    });
 
 
-    // $('#digdeeperdrop').on('click', function (event) {
-    //     event.preventDefault();
-    //     $('#digdeeper').toggleClass("is-active");
+    $('#digdeeperdrop').on('click', function (event) {
+        event.preventDefault();
+        $('#digdeeper').toggleClass("is-active");
 
-    //     $('#digdeeper .dropdown-content').on('click', function (event) {
-    //         event.stopPropagation();
-    //         $('#digdeeperdrop').find('span:first-child').text($(event.target).text());
-    //         $('#digdeeper').removeClass("is-active");
-    //     });
-    // });
+        $('#digdeeper .dropdown-content').on('click', function (event) {
+            event.stopPropagation();
+            $('#digdeeperdrop').find('span:first-child').text($(event.target).text());
+            $('#digdeeper').removeClass("is-active");
+        });
+    });
 
-    // $(document).on('click', function (event) {
-    //     // Check if the clicked element is not #startwith or its descendants
-    //     if (!$(event.target).closest('#startwithdrop').length) {
-    //         event.preventDefault();
-    //         $('#startwith').removeClass("is-active");
-    //     }
-    //     if (!$(event.target).closest('#digdeeperdrop').length) {
-    //         event.preventDefault();
-    //         $('#digdeeper').removeClass("is-active");
-    //     }
-    // });
+    $(document).on('click', function (event) {
+        // Check if the clicked element is not #startwith or its descendants
+        if (!$(event.target).closest('#startwithdrop').length) {
+            event.preventDefault();
+            $('#startwith').removeClass("is-active");
+        }
+        if (!$(event.target).closest('#digdeeperdrop').length) {
+            event.preventDefault();
+            $('#digdeeper').removeClass("is-active");
+        }
+    });
 
 
 

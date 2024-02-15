@@ -58,12 +58,3 @@ html {
 .signature {
     text-align: right;
 }
-.section-text{
-    display: inline-block;
-}
-
-#contact-text {
-    display: block;
-    position: relative;
-    width: 462px;
-}

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .highlight-nav {
     background-color: white;
 }
@@ -17,4 +21,37 @@
     font-weight: 500;
     text-align: left;
     word-wrap: break-word;
+}
+
+#checkout{
+    display: inline-grid;
+    align-items: center;
+    margin-left: 11em;
+}
+
+
+.heading-text{
+    position: relative;
+}
+
+.contact-text {
+    display: block;
+    position: absolute;
+    width: 40%;
+    font-size: 18px !important;
+}
+
+.section-text {
+    display: inline-block;
+}
+
+.contact-image {
+    max-width: 40%;
+    height: auto;
+    margin-left: 50%;
+}
+
+#bgimg{
+    max-width: 40%;
+    height: auto;
 }
