@@ -17,14 +17,14 @@ http://www.templatemo.com/tm-518-sentra
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/mystyles.css">
+    <!-- <link rel="stylesheet" href="css/mystyles.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/fontAwesome.css">
     <link rel="stylesheet" href="css/light-box.css">
     <link rel="stylesheet" href="css/owl-carousel.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="css/main.css">
 
 
@@ -32,8 +32,10 @@ http://www.templatemo.com/tm-518-sentra
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bulma@0.9.2/js/bulma.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bulma@0.9.2/js/bulma.min.js"></script> -->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -189,368 +191,558 @@ http://www.templatemo.com/tm-518-sentra
     </div>
 
     <div class="page-content">
-        <section id="featured" class="content-section" style="height: 100%">
+        <section id="featured" class="content-section" style="height: 100%; z-index: -1; border-bottom: none;">
             <div class="section-heading">
                 <h1><em>Resources</em></h1>
             </div>
         </section>
 
 
-        <!-- https://bulma.io/documentation/components/tabs/ -->
         <section style="margin-top: -5em;">
             <div class="tabs is-boxed">
                 <ul>
-                    <li class="is-active" id="progButton"><a href="#prog">Programming Languages</a></li>
-                    <li id="csButton"><a href="#concept">CS Concepts</a></li>
-                    <li><a href="#tech">Software/Hardware Technology</a></li>
-                    <li><a href="#oppor">CS Opportunities</a></li>
-                    <li><a href="career">Career Tips</a></li>
+                    <li class="is-active" data-target="prog"><a href="#">Programming Languages</a></li>
+                    <li data-target="concept"><a href="#">CS Concepts</a></li>
+                    <li data-target="tech"><a href="#">Software/Hardware Technology</a></li>
+                    <li data-target="oppor"><a href="#">CS Opportunities</a></li>
+                    <li data-target="career"><a href="#">Career Tips</a></li>
                 </ul>
             </div>
-        </section>
 
-        <section style="border-bottom: 1px solid gray;">
-            <div id="prog" class="tab-content">
-                <div class="row" style="display: flex; gap:2%">
-                    <div class="col-md-4">
-                        <div class="item">
-                            <div class="card"
-                                style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
-                                <img src="img/white.jpg"
-                                    style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
-                                <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
-                                    <b>Intro to Java</b>
-                                </div>
-                                <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
-                                    Author</div>
+            <section style="border-bottom: 1px solid gray;">
+                <div id="prog" class="tab-content">
+                    <div class="row" style="display: flex; gap:2%">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Intro to Java</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Author</div>
 
-                                <div class="container">
+                                    <div class="container">
 
-                                    <div style="height: 40%;">
-                                        <p style="color: black;padding-top: 5%;">If you're interested in CS research,
-                                            there's tons of research opportunities for you
-                                            at Wellesley!</p>
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
+
+                                        </div>
 
                                     </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
 
-                                </div>
-                                <div
-                                    style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
-
-                                    <button class="tags"
+                                        <!-- <button class="tags"
                                         style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
                                         <div
                                             style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
                                             View tags</div>
-                                    </button>
-                                    <button class="VisitSite" onclick="window.open('./beginnersguide.html')"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                    </button> -->
+                                        <button class="VisitSite" onclick="window.open('./beginnersguide.html')"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                SEE MORE</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Research
+                                            Opportunities in CS!</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Eveline
+                                        Buestan</div>
+
+                                    <div class="container">
+
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
+
+                                        <!-- <button class="tags"
+                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
                                         <div
-                                            style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            VIEW</div>
-                                    </button>
+                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                            View tags</div>
+                                    </button> -->
+                                        <button class="VisitSite"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                VISIT SITE</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Research
+                                            Opportunities in CS!</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Eveline
+                                        Buestan</div>
+
+                                    <div class="container">
+
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
+
+                                        <!-- <button class="tags"
+                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                        <div
+                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                            View tags</div>
+                                    </button> -->
+                                        <button class="VisitSite"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                VISIT SITE</div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <br><br>
 
-                    <div class="col-md-4">
+                    <div class="row" style="display: flex; gap:2%">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Research
+                                            Opportunities in CS!</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Eveline
+                                        Buestan</div>
 
-                        <div class="item">
-                            <div class="card"
-                                style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
-                                <img src="img/white.jpg"
-                                    style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
-                                <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
-                                    <b>Research
-                                        Opportunities in CS!</b>
-                                </div>
-                                <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
-                                    Eveline
-                                    Buestan</div>
+                                    <div class="container">
 
-                                <div class="container">
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
 
-                                    <div style="height: 40%;">
-                                        <p style="color: black;padding-top: 5%;">If you're interested in CS research,
-                                            there's tons of research opportunities for you
-                                            at Wellesley!</p>
+                                        </div>
 
                                     </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
 
-                                </div>
-                                <div
-                                    style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
-
-                                    <button class="tags"
+                                        <!-- <button class="tags"
                                         style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
                                         <div
                                             style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
                                             View tags</div>
-                                    </button>
-                                    <button class="VisitSite"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                    </button> -->
+                                        <button class="VisitSite"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                VISIT SITE</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Research
+                                            Opportunities in CS!</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Eveline
+                                        Buestan</div>
+
+                                    <div class="container">
+
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
+
+                                        <!-- <button class="tags"
+                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
                                         <div
-                                            style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            VISIT SITE</div>
-                                    </button>
+                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                            View tags</div>
+                                    </button> -->
+                                        <button class="VisitSite"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                VISIT SITE</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Research
+                                            Opportunities in CS!</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Eveline
+                                        Buestan</div>
+
+                                    <div class="container">
+
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
+
+                                        <!-- <button class="tags"
+                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                        <div
+                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                            View tags</div>
+                                    </button> -->
+                                        <button class="VisitSite"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                VISIT SITE</div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <br><br>
 
-                    <div class="col-md-4">
+                    <div class="row" style="display: flex; gap:2%">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Research
+                                            Opportunities in CS!</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Eveline
+                                        Buestan</div>
 
-                        <div class="item">
-                            <div class="card"
-                                style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
-                                <img src="img/white.jpg"
-                                    style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
-                                <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
-                                    <b>Research
-                                        Opportunities in CS!</b>
-                                </div>
-                                <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
-                                    Eveline
-                                    Buestan</div>
+                                    <div class="container">
 
-                                <div class="container">
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
 
-                                    <div style="height: 40%;">
-                                        <p style="color: black;padding-top: 5%;">If you're interested in CS research,
-                                            there's tons of research opportunities for you
-                                            at Wellesley!</p>
+                                        </div>
 
                                     </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
 
-                                </div>
-                                <div
-                                    style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
-
-                                    <button class="tags"
+                                        <!-- <button class="tags"
                                         style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
                                         <div
                                             style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
                                             View tags</div>
-                                    </button>
-                                    <button class="VisitSite"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
-                                        <div
-                                            style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            VISIT SITE</div>
-                                    </button>
+                                    </button> -->
+                                        <button class="VisitSite"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                VISIT SITE</div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
+                    <br><br>
+
+
+
+
+
                 </div>
 
-                <br><br>
 
-                <div class="row" style="display: flex; gap:2%">
-                    <div class="col-md-4">
-                        <div class="item">
-                            <div class="card"
-                                style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
-                                <img src="img/white.jpg"
-                                    style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
-                                <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
-                                    <b>Research
-                                        Opportunities in CS!</b>
-                                </div>
-                                <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
-                                    Eveline
-                                    Buestan</div>
 
-                                <div class="container">
+                <div id="concept" class="tab-content" style="display: none;">
+                    <div class="row" style="display: flex; gap:2%">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Intro to Java</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Author</div>
 
-                                    <div style="height: 40%;">
-                                        <p style="color: black;padding-top: 5%;">If you're interested in CS research,
-                                            there's tons of research opportunities for you
-                                            at Wellesley!</p>
+                                    <div class="container">
+
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
+
+                                        </div>
 
                                     </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
 
-                                </div>
-                                <div
-                                    style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
-
-                                    <button class="tags"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
-                                        <div
-                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            View tags</div>
-                                    </button>
-                                    <button class="VisitSite"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
-                                        <div
-                                            style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            VISIT SITE</div>
-                                    </button>
+                                        <!-- <button class="tags"
+                                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                                        <div
+                                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                            View tags</div>
+                                                    </button> -->
+                                        <button class="VisitSite" onclick="window.open('./beginnersguide.html')"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                SEE MORE</div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <br><br>
+                </div>
+                <div id="tech" class="tab-content" style="display: none;">
+                    <div class="row" style="display: flex; gap:2%">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Intro to Java</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Author</div>
 
+                                    <div class="container">
 
-                    <div class="col-md-4">
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
 
-                        <div class="item">
-                            <div class="card"
-                                style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
-                                <img src="img/white.jpg"
-                                    style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
-                                <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
-                                    <b>Research
-                                        Opportunities in CS!</b>
-                                </div>
-                                <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
-                                    Eveline
-                                    Buestan</div>
-
-                                <div class="container">
-
-                                    <div style="height: 40%;">
-                                        <p style="color: black;padding-top: 5%;">If you're interested in CS research,
-                                            there's tons of research opportunities for you
-                                            at Wellesley!</p>
+                                        </div>
 
                                     </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
 
-                                </div>
-                                <div
-                                    style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
-
-                                    <button class="tags"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
-                                        <div
-                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            View tags</div>
-                                    </button>
-                                    <button class="VisitSite"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
-                                        <div
-                                            style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            VISIT SITE</div>
-                                    </button>
+                                        <!-- <button class="tags"
+                                                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                                                        <div
+                                                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                                            View tags</div>
+                                                                    </button> -->
+                                        <button class="VisitSite" onclick="window.open('./beginnersguide.html')"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                SEE MORE</div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <br><br>
+                </div>
+                <div id="oppor" class="tab-content" style="display: none;">
+                    <div class="row" style="display: flex; gap:2%">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Intro to Java</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Author</div>
 
+                                    <div class="container">
 
-                    <div class="col-md-4">
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
 
-                        <div class="item">
-                            <div class="card"
-                                style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
-                                <img src="img/white.jpg"
-                                    style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
-                                <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
-                                    <b>Research
-                                        Opportunities in CS!</b>
-                                </div>
-                                <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
-                                    Eveline
-                                    Buestan</div>
-
-                                <div class="container">
-
-                                    <div style="height: 40%;">
-                                        <p style="color: black;padding-top: 5%;">If you're interested in CS research,
-                                            there's tons of research opportunities for you
-                                            at Wellesley!</p>
+                                        </div>
 
                                     </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
 
-                                </div>
-                                <div
-                                    style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
-
-                                    <button class="tags"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
-                                        <div
-                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            View tags</div>
-                                    </button>
-                                    <button class="VisitSite"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
-                                        <div
-                                            style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            VISIT SITE</div>
-                                    </button>
+                                        <!-- <button class="tags"
+                                                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                                                        <div
+                                                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                                            View tags</div>
+                                                                    </button> -->
+                                        <button class="VisitSite" onclick="window.open('./beginnersguide.html')"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                SEE MORE</div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <br><br>
+                </div>
+                <div id="career" class="tab-content" style="display: none;">
+                    <div class="row" style="display: flex; gap:2%">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="card"
+                                    style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
+                                    <img src="img/white.jpg"
+                                        style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
+                                    <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
+                                        <b>Intro to Java</b>
+                                    </div>
+                                    <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
+                                        Author</div>
+
+                                    <div class="container">
+
+                                        <div style="height: 40%;">
+                                            <p style="color: black;padding-top: 5%;">If you're interested in CS
+                                                research,
+                                                there's tons of research opportunities for you
+                                                at Wellesley!</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
+
+                                        <!-- <button class="tags"
+                                                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                                                        <div
+                                                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                                            View tags</div>
+                                                                    </button> -->
+                                        <button class="VisitSite" onclick="window.open('./beginnersguide.html')"
+                                            style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
+                                            <div
+                                                style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
+                                                SEE MORE</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
                 </div>
 
-                <br><br>
-
-                <div class="row" style="display: flex; gap:2%">
-                    <div class="col-md-4">
-                        <div class="item">
-                            <div class="card"
-                                style="width:100%; height: 100%; background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%); border-radius: 30px; border: 1px black solid">
-                                <img src="img/white.jpg"
-                                    style="flood-color: white; border-radius: 30px; border-bottom: 1px black solid; height: 50%;">
-                                <div class="guide-title" style="position: absolute; bottom: 80%; left: 16px;">
-                                    <b>Research
-                                        Opportunities in CS!</b>
-                                </div>
-                                <div class="guide-author" style="position: absolute; bottom: 60%; left: 16px;">By
-                                    Eveline
-                                    Buestan</div>
-                
-                                <div class="container">
-                
-                                    <div style="height: 40%;">
-                                        <p style="color: black;padding-top: 5%;">If you're interested in CS research,
-                                            there's tons of research opportunities for you
-                                            at Wellesley!</p>
-                
-                                    </div>
-                
-                                </div>
-                                <div
-                                    style="bottom: 6px;position: absolute;width: 90%;left: 5%;display: flex;justify-content: space-between;">
-                
-                                    <button class="tags"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
-                                        <div
-                                            style="color: white;font-size: 13px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            View tags</div>
-                                    </button>
-                                    <button class="VisitSite"
-                                        style="width: 35%;height: 35%;padding-left: 17.5%; padding-top: 6%;padding-bottom: 6%;margin-left: 27%;margin-top: 8%;background: black;box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;display: inline-flex">
-                                        <div
-                                            style="color: white;font-size: 12px;font-family: Roboto;font-weight: 700;margin-left: -49px;padding-left: 40%;">
-                                            VISIT SITE</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                
-                </div>
-                <br><br>
-
-
-
-
-
-            </div>
-
-
-
-            <div id="concept" class="tab-content" style="display: none;">Music content...</div>
-            <div id="tech" class="tab-content" style="display: none;">Videos content...</div>
-            <div id="oppor" class="tab-content" style="display: none;">Documents content...</div>
-            <div id="career" class="tab-content" style="display: none;">Documents content...</div>
-
+            </section>
         </section>
 
 
@@ -561,7 +753,7 @@ http://www.templatemo.com/tm-518-sentra
                 <div class="section-heading">
                     <div class="section-text">
                         <h1><em>Contact Us</em></h1>
-                       
+
                     </div>
                     <br>
                     <div class="heading-text">
@@ -572,7 +764,7 @@ http://www.templatemo.com/tm-518-sentra
                         </p>
                     </div>
 
-                <img src="img/Cool Kids Study.png" class="contact-image"></img>
+                    <img src="img/Cool Kids Study.png" class="contact-image"></img>
 
                 </div>
 
@@ -629,6 +821,7 @@ http://www.templatemo.com/tm-518-sentra
 
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/nav.js"></script>
 
 <script>
     // Hide Header on on scroll down
@@ -669,6 +862,9 @@ http://www.templatemo.com/tm-518-sentra
 
         lastScrollTop = st;
     }
+
+
+
 </script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>

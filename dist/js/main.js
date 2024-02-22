@@ -70,25 +70,6 @@ jQuery(document).ready(function ($) {
     });
 
 
-    // $('.tabs ul li').click(function () {
-    //     // Remove 'is-active' class from all tabs
-    //     $('.tabs ul li').removeClass('is-active');
-
-    //     // Add 'is-active' class to the clicked tab
-    //     $(this).addClass('is-active');
-    // });
-
-    // $('.tabs ul li a').click(function (e) {
-    //     e.preventDefault();
-    //     var target = $(this).attr('href');
-
-    //     $('.tab-content').hide();
-    //     $(target).show();
-    // });
-
-    $('#progButton').click(function(){
-        $('.tab-content').html='';
-    })
 
 
 
@@ -97,7 +78,7 @@ jQuery(document).ready(function ($) {
     // var contentSection = $('.content-section, .main-banner');
     // var navigation = $('nav');
 
-    // //when a nav link is clicked, smooth scroll to the section
+    //when a nav link is clicked, smooth scroll to the section
     // navigation.on('click', 'a', function (event) {
     //     event.preventDefault(); //prevents previous event
     //     smoothScroll($(this.hash));
@@ -129,6 +110,7 @@ jQuery(document).ready(function ($) {
     //         }
     //     });
     // }
+    
     // function smoothScroll(target) {
     //     $('body,html').animate({
     //         scrollTop: target.offset().top
@@ -136,15 +118,16 @@ jQuery(document).ready(function ($) {
     // }
 
 
-    // $('.button a[href*=#]').on('click', function (e) {
-    //     e.preventDefault();
-    //     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 0 }, 500, 'linear');
-    // });
+    $('.button a[href*=#]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 0 }, 500, 'linear');
+    });
 
 
     $('#startwithdrop').on('click', function (event) {
         event.preventDefault();
-        $('#startwith').addClass("is-active");
+
+        $('#startwithdrop').closest('.dropdown').find('.dropdown-menu').css('display', 'block');
 
         $('#startwith .dropdown-content').on('click', function (event) {
             event.stopPropagation();
@@ -156,7 +139,9 @@ jQuery(document).ready(function ($) {
 
     $('#digdeeperdrop').on('click', function (event) {
         event.preventDefault();
-        $('#digdeeper').toggleClass("is-active");
+        // $('#dig-menu').toggleClass("is-active");
+        $('#dig-menu').attr('display', 'block');
+
 
         $('#digdeeper .dropdown-content').on('click', function (event) {
             event.stopPropagation();
