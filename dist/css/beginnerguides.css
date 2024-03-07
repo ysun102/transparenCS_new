@@ -2,14 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* .Welcome {
-    margin-left: 132px;
-} */
-
-/* .Title {
-    margin-bottom: 32px;
-} */
-
 .button-navigation {
     margin-top: 57px;
 }
@@ -21,12 +13,19 @@ html {
 
 .article-navigation {
     margin-right: 40px;
+    margin-bottom: 16px;
     width: fit-content;
     height: 61px;
     padding-left: 25px;
     padding-right: 25px;
     background-color: black;
     color: white;
+}
+
+#arrow-down { 
+    display:inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .article-text, .signature {
@@ -53,6 +52,8 @@ html {
 
 .guide-list {
     list-style: inside;
+    width:90%;
+    margin: 0 auto;
 }
 
 .signature {
