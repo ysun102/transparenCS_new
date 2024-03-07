@@ -125,7 +125,7 @@ jQuery(document).ready(function ($) {
 
 
     $('#startwithdrop').on('click', function (event) {
-        event.preventDefault();
+        // event.preventDefault();
 
         $('#startwithdrop').closest('.dropdown').find('.dropdown-menu').css('display', 'block');
 
@@ -161,6 +161,7 @@ jQuery(document).ready(function ($) {
             $('#digdeeper').removeClass("is-active");
         }
     });
+
 
 
 
