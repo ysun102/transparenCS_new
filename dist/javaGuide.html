@@ -65,7 +65,7 @@ http://www.templatemo.com/tm-518-sentra
     <div class="sidebar-navigation hidde-sm hidden-xs" style="top:0%;height: 100%;padding-top: 20%;">
         <nav>
             <ul>
-                <li>
+                <li onclick="location.href='home.html'" style="cursor: pointer;">
                     <a href="home.html">
                         <!-- <span class="circle"></span> -->
                         Home
@@ -78,19 +78,19 @@ http://www.templatemo.com/tm-518-sentra
                         About the creators/ contributors
                     </a>
                 </li>
-                <li>
-                    <a href="beginnersguide.html">
+                <li onclick="location.href='beginnersguide.html'" style="cursor: pointer;">
+                    <a>
                         <span class="circle"></span>
                         Beginner's guides
                     </a>
                 </li>
-                <li>
+                <li onclick="location.href='learnToCode.html'" style="cursor: pointer;">
                     <a href="#video">
                         <span class="circle"></span>
                         Learn to code
                     </a>
                 </li>
-                <li>
+                <li onclick="location.href='findCommunity.html'" style="cursor: pointer;">
                     <a href="#blog">
                         <span class="circle"></span>
                         Find community
@@ -144,49 +144,44 @@ http://www.templatemo.com/tm-518-sentra
 
     <div class="content-section content-section-landing" id="home">
 
-        <section style="padding-top: 7%;">
+        <section style="padding-left:21%;padding-top: 7%;">
 
             <div class="Welcome"
-            style="width: auto; justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex;">
+            style="width: auto; justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex; margin-top: -110px">
                 <div class="Frame224"
-                style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex; margin-left:-80px;">
+                style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
                     <div class="Title"
                         style="width: 420px;color: black;font-size: 45px;font-weight: 500;text-align: left;word-wrap: break-word;">
-                        Interested in CS Opportunities?
+                        Intro to Java
                     </div>
 
 
                     <div class="Welcome-text"
                         style="width: 400px;color: black;font-size: 18px;font-weight: 400;line-height: 28.12px;word-wrap: break-word;text-align: left;">
-                        Then this is the place for you! 🎉
+                        Well, good choice! Developed in the early 1990&#39;s Java has grown to be one of the world&#39;s most popular computing languages. So here's what you need to know:
                     </div>
                     
                 </div>
 
+                <img src="img/java 1.png" class="beginnerLandingImage"
+                    style="width: 415px; height: 415px; margin-left: 5%; margin-top:5%; outline: none;"
+                    alt="image a of to-go coffee cup, reminiscent of Java's coffee cup logo, with wide eyes and a mouth shaped in an 'o'">
+
             </div>
 
-            <div class="button-navigation" style="padding-left:21%;">
-                <button class="article-navigation" onClick="document.getElementById('whatIsResearch').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">WHAT IS RESEARCH?</button>
-                <button class="article-navigation" onClick="document.getElementById('summerResearch').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">WELLESLEY SCIENCE SUMMER RESEARCH</button>
-                <button class="article-navigation" onClick="document.getElementById('independent').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">INDEPENDENT RESEARCH</button>
-                <button class="article-navigation" onClick="document.getElementById('honorsProject').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">HONORS PROJECT</button>
-                <button class="article-navigation" onClick="document.getElementById('urops').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">UROP</button>
-                <button class="article-navigation" onClick="document.getElementById('reus').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">REUS</button>
-                <button class="article-navigation" onClick="document.getElementById('summerResearchPrograms').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">SUMMER RESEARCH PROGRAMS</button>
-                <button class="article-navigation" onClick="document.getElementById('distributedMentor').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">DISTRIBUTED MENTOR PROJECT</button>
+            <div class="button-navigation">
+                <button class="article-navigation" onClick="document.getElementById('history').scrollIntoView();"
+                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">HISTORY</button>
+                <button class="article-navigation" onClick="document.getElementById('courses').scrollIntoView();"
+                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">WELLESLEY-SPECIFIC INFORMATION</button>
+                <button class="article-navigation" onClick="document.getElementById('ides').scrollIntoView();"
+                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">BEST IDES</button>
+                <button class="article-navigation" onClick="document.getElementById('more').scrollIntoView();"
+                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">FURTHER RESOURCES</button>
             </div>
-
-            <div id="arrow-down" style="padding-left:21%;">
+            <div id="arrow-down">
                 <img src="img/Arrow Down 1.png" class="arrow-down"
-                    onclick="document.getElementById('whatIsResearch').scrollIntoView();">
+                    onclick="document.getElementById('history').scrollIntoView();">
             </div>
             
 
@@ -196,166 +191,150 @@ http://www.templatemo.com/tm-518-sentra
 
     <div class="page-content">
         <section class="article-section">
-            <h1 class="guide-title" id="whatIsResearch">What is research in Computer Science? 🤔</h1>
+            <h1 class="guide-title" id="history">History</h1>
             <section class="article-content" style="font-size:20px; text-align:left;">
                 <p class="article-text">
-                    You get to choose a specific area within computer science that you want to continue learning about. Like any other research paper, you investigate that topic and conclude your findings.
+                    Java was first created by James Gosling and his team of researchers at Sun Microsystems inc. 
+                They set out with the intent to create a language that enabled electronic devices to communicate with one another. 
+                And as you&#39;ll learn if you continue to study Java, they succeeded in some major ways. 
+                Let&#39;s get into the technicality: 
+                </p>
+
+
+                <p class="article-text">
+                    Prior to Java, a compiler translated code in programming languages into instructions for a particular 
+                    type of computer. So Java really changed the game when the Java compiler took java code then turned it 
+                    into <a href="https://www.techtarget.com/whatis/definition/bytecode">bytecode</a>. Next, bytecode would be interpreted by something called the Java Runtime Environment (<a href="https://www.ibm.com/topics/jre">JRE</a>) 
+                    or the Java virtual machine (<a href="https://www.javatpoint.com/jvm-java-virtual-machine">JVM</a>). The interpreter then translates the code for whatever host computer, 
+                    no matter the underlying architecture. THIS WAS HUGE.
                 </p>
 
                 <p class="article-text">
-                    Want to learn more? Click here:
-                    <a href="http://conquer.cra.org/students/getting-into-research">
-                        http://conquer.cra.org/students/getting-into-research</a>
+                    This meant that in 1995 you in your basement with your parent&#39;s desktop computer could call 
+                    up a friend with a different type of desktop and the two of you could look at the same webpage, same 
+                    format, same EVERYTHING.
+                </p>
+
+                <p class="article-text" style="margin-bottom:0px;"">
+                    Java is an object oriented programming language. This means that the language was developed around
+                    the idea of creating objects. These reusable objects can then be manipulated to perform certain tasks 
+                    in your program. A simple Java object can look like this:
+                </p>
+                
+                <section class="code-example">
+                    <code class="code-snippet">
+                        <pre style="width:50%;margin:0 auto;">
+import static java.langSystem.out
+                            
+public class Student {
+    String school;
+    String name;
+    public class Main(String[] args) {
+        Student s1 = new Student();
+        s1.name = "Joy";
+        s1.school = "Wellesley College"
+     }
+}
+                        </pre>
+                    </code>
+                </section>
+                
+
+
+                <p class="article-text">
+                    You can then add s1 to a list of other student objects or create methods to run in the student class.
                 </p>
             </section>        
         </section>
 
         <section class="article-section">
-            <h1 class="guide-title" id="summerResearch">Wellesley Science Summer Research Program 😯</h1>
+            <h1 class="guide-title" id="courses">So…What Wellesley Courses use Java? 🧑‍🎓</h1>
             <section class="article-content" style="font-size:20px; text-align:left;">
-                <p class="article-text">
-                    This program employs students as full-time research assistants in a structured 9- or 10-week program. You receive a stipend and can use campus housing! The application window usually opens around the start of the Spring semester.
-                </p>
-
-                <p class="article-text">
-                    Want to apply? Click here: 
-                    <a href="https://webapps.wellesley.edu/science_summer_research/index.php?cas=1">https://webapps.wellesley.edu/science_summer_research/index.php?cas=1</a>
-                </p>
-                
+                <ul class="guide-list">
+                    <li>CS 230: Data Structures</li>
+                    <li>CS 313: Computational Biology</li>
+                </ul>
             </section>            
         </section>
 
         <section class="article-section">
-            <h1 class="guide-title" id="independent">Independent research 🤓</h1>
+            <h1 class="guide-title" id="ides">Best *IDEs* for this language 🎉</h1>
             <section class="article-content" style="font-size:20px; text-align:left;">
-                <p class="article-text">
-                    <strong>Research Assistantship</strong><br>
-                    It is a paid position! There is no fixed time frame, so you can start and end any time. You are employed through the college to help a faculty member with a research project. The amount of work you would be given varies from project to project. Note to remember: No academic credit is given in this position.
-                </p>
-                
-                <p class="article-text">
-                    <strong>Independent Projects</strong><br>
-                    You would be involved in academic or research work supervised by a faculty member for academic credit!
-                </p>
-                <p class="article-text">
-                    If you wish to do an independent project, you should find an advisor and register for CS250, CS250H, CS350 or CS350H. These courses are available to students who have taken CS230 or given permission of the faculty advisor.
-                    Important note: CS250 and CS350 are one-unit courses, while CS250H and CS350H are half unit courses.
-                </p>
-
-                <p class="article-text">
-                    Want more information? Click here: <a href="https://www.wellesley.edu/cs/research/independent">https://www.wellesley.edu/cs/research/independent</a>
-                </p>
+                <ul class="guide-list">
+                    <li><a href="https://www.bluej.org/">BlueJ</a> - There is a reason CS 230 has used this IDE for so many years. 
+                        This *open-sourced* Java IDE was developed with education in mind 
+                        thus this simple environment is a great choice for those just starting 
+                        their journey with Java.</li>
+                    <li><a href="https://www.jetbrains.com/idea/">IntelliJ Idea</a> - Created by tech giant JetBrains, IntelliJ is a great 
+                        choice for the programmer that needs a professional Java environment. 
+                        IntelliJ provides a paid “ultimate” experience and a free programming 
+                        experience. In the free version you&#39;ll have support with *git* and 
+                        *github*, cooperation with *Docker* and more… (Disclaimer: You will 
+                        have to pay to develop with languages other than Java.)</li>
+                    <li><a href="https://netbeans.apache.org/front/main/index.html">Apache NetBeans</a> - Free, open source, with built-in tutorials on Java 
+                        and PHP. Need I say more? Probably. Apache is highly respected for 
+                        its straightforwardness and its *code refactoring* feature.</li>
+                    <li><a href="https://developer.android.com/studio">Android Studio</a> - Everything you need to develop and deploy an 
+                        Android application using Java.</li>
+                    <li>Haven&#39;t found quite what you are looking for? Check out the TCS IDE page 
+                        to explore many more IDEs.</li>
+                </ul>
             </section>            
         </section>
 
         <section class="article-section">
-            <h1 class="guide-title" id="honorsProject">Honors Project 🤩</h1>
+            <h1 class="guide-title">What can you build with this language? 🏗️</h1>
             <section class="article-content" style="font-size:20px; text-align:left;">
                 <p class="article-text">
-                    It is usually more substantial than the independent project. It spans over two semesters and leads to a Senior Thesis! The honors work is looked at by a college-wide committee, specifically, the Committee on Curriculum and Instruction.
+                    Java is often used to make Android compatible mobile applications. 
+                    It can also be used to support JavaScript, HTML and CSS in the creation of 
+                    online web portals.
                 </p>
 
 
                 <p class="article-text">
-                    Interested? Click here: <a href="https://www.wellesley.edu/cs/research/thesis">https://www.wellesley.edu/cs/research/thesis</a>
+                    Geeks for Geeks provides a great list of possible projects if you&#39;re looking 
+                    to boost your Github contributions.
                 </p>
             </section>        
         </section>
 
         <section class="article-section">
-            <h1 class="guide-title" id="urops">UROPs at MIT 🌟 </h1>
+            <h1 class="guide-title" id="more">Further resources</h1>
             <section class="article-content" style="font-size:20px; text-align:left;">
                 <p class="article-text">
-                    UROP, also known as, Undergraduate Research Opportunities Program, enables students to join research efforts of MIT faculty in multiple departments.
+                    If you know the author of this beginner guide, you know she is a big fan of 
+                    W3Schools. Even after you leave this webpage to inevitably become an expert in 
+                    Java, you can return to W3schools to brush up on switch cases, java methods, 
+                    polymorphism and 61 other Java related topics.
                 </p>
 
                 <p class="article-text">
-                    If you wish to enroll in a summer UROP for credit, you can do so using the cross-registration system. You would have to bring a completed cross-registered form to both Wellesley and MIT’s registrar offices. However, keep in mind that, for the summer UROP, you are required to pay the Wellesley Summer Session tuition for a one-unit course.
+                    Geeks for Geeks offers a thorough introduction to java as well as documentation 
+                    of Java OOP concepts, flow control, exception handling and much more.
                 </p>
 
                 <p class="article-text">
-                    Tips for finding a UROP: <a href="https://urop.mit.edu/students/resources/tips/">https://urop.mit.edu/students/resources/tips/</a>
+                    When in doubt, read the Oracle Java documentation. It is not so pleasing on the 
+                    eyes and may even seem intimidating but if you take it piece by piece it is 
+                    very helpful. And remember, take what you need, leave what you don&#39;t. You are 
+                    not expected to read documentation front to back, especially because it can 
+                    change every few years when new versions of Java are released. You can build 
+                    incredibly impactful projects using Java but those impacts are not always good. 
+                    Criminal face detection and like-systems have used Java to the detriment of 
+                    communities of color. If you want to learn more you can turn to one of Alana&#39;s 
+                    favorite documentaries, Coded Bias or the book Race After Technology by the 
+                    incredible Ruha Benjamin.
                 </p>
 
                 <p class="article-text">
-                    Guidelines and Application deadline for Wellesley Students: <a href="https://urop.mit.edu/urop-for-wellesley-college-students/">https://urop.mit.edu/urop-for-wellesley-college-students/</a>
-                </p>
-                
-                <p class="article-text">
-                    For your information: The Science Center has no information about UROP at MIT, please check with the contacts below!
+                    Now go forth and create!!
                 </p>
 
-                <p class="article-text">
-                    Still have questions? Contact:
-                    <ul class="guide-list">
-                        <li><a href="https://urop.mit.edu/">MIT UROP Office</a>, 7-104, 617.253.7306, urop@mit.edu
-                        <li><a href="https://www.wellesley.edu/registrar">Wellesley Registrar's Office</a>, Schneider Center First Floor, 781.283.2307
-                    </ul>
-                </p>
-            </section>        
-        </section>
-
-        <section class="article-section">
-            <h1 class="guide-title" id="honorsProject">Honors Project 🤩</h1>
-            <section class="article-content" style="font-size:20px; text-align:left;">
-                <p class="article-text">
-                    It is usually more substantial than the independent project. It spans over two semesters and leads to a Senior Thesis! The honors work is looked at by a college-wide committee, specifically, the Committee on Curriculum and Instruction.
-                </p>
-
-
-                <p class="article-text">
-                    Interested? Click here: <a href="https://www.wellesley.edu/cs/research/thesis">https://www.wellesley.edu/cs/research/thesis</a>
-                </p>
-            </section>        
-        </section>
-
-        <section class="article-section">
-            <h1 class="guide-title" id="reus">What are REUs? 🙊</h1>
-            <section class="article-content" style="font-size:20px; text-align:left;">
-                <p class="article-text">
-                    REU, also known as, Research Experiences for Undergraduates, is a program that supports research participation by undergraduate students. The research can be done in any of the areas that is funded by the National Science Foundation.
-                </p>
-
-                <p class="article-text">
-                    Intrigued and need more information? Click here:<br><a href="https://beta.nsf.gov/funding/opportunities/cise-research-experiences-undergraduates-sites">https://beta.nsf.gov/funding/opportunities/cise-research-experiences-undergraduates-sites</a>
-                </p>
-            </section>        
-        </section>
-
-        <section class="article-section">
-            <h1 class="guide-title" id="summerResearchPrograms">Summer Research Programs 😄</h1>
-            <section class="article-content" style="font-size:20px; text-align:left;">
-                <p class="article-text">
-                    You can also do summer research at different Colleges and Universities! In the link below, there are a list of programs that may interest you. These programs generally offer a stipend and sometimes housing!
-                </p>
-
-                <p class="article-text">
-                    Click here:<br><a href="https://conquer.cra.org/students/getting-into-research/finding-opportunities">https://conquer.cra.org/students/getting-into-research/finding-opportunities</a>
-                </p>
-            </section>        
-        </section>
-
-        <section class="article-section">
-            <h1 class="guide-title" id="distributedMentor">Distributed Mentor Project 😸</h1>
-            <section class="article-content" style="font-size:20px; text-align:left;">
-                <p class="article-text">
-                    This program aims to increase the number of women entering their graduate studies, specifically, in the fields of computer science and engineering. It is a great opportunity that allows a view of what graduate school is like.
-                </p>
-
-                <p class="article-text">
-                    Curious? Click here for more: <a href="https://cra.org/cra-wp/">https://cra.org/cra-wp/</a>
-                </p>
-            </section>        
-        </section>
-
-        <section class="article-section">
-            <section class="article-content" style="font-size:20px; text-align:left;">
-                <p class="article-text">
-                    With all that being said,
-                </p>
-
-                <p class="article-text">
-                    Best of luck!
+                <p class="signature">
+                    With love,<br>
+                    <img src="img/alana_signature.png">
+                    <br>Alana Mackey
                 </p>
             </section>        
         </section>
