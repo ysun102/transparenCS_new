@@ -271,7 +271,7 @@ header {
   text-decoration: none !important;
   font-size: 15px;
   letter-spacing: 0.5px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   padding-left: 15px;
 }
 
@@ -1109,9 +1109,9 @@ nav .active-section span {
     display: none;
   }
 
-  .sidebar-navigation .logo a {
+  /* .sidebar-navigation .logo a {
     font-size: 18px;
-  }
+  } */
 
   .sidebar-navigation nav a {
     font-size: 13px;
