@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#home { 
+    height: max-content;
+}
+
 .button-navigation {
     margin-top: 57px;
 }
