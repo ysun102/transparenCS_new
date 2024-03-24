@@ -43,6 +43,12 @@ html {
     font-size: 40px;
 }
 
+.guide-subtitle {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
 .article-section {
     padding-top: 72px;
     padding-bottom: 72px;
