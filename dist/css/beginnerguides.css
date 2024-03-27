@@ -49,6 +49,11 @@ html {
     font-size: 30px;
 }
 
+tr, td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
 .article-section {
     padding-top: 72px;
     padding-bottom: 72px;
