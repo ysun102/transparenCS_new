@@ -196,3 +196,7 @@ html {
     letter-spacing: 0.5px;
     margin-bottom: 12.5px;
 }
+
+.single-card {
+    padding-right: 9%;
+}
