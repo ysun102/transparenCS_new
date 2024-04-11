@@ -69,6 +69,13 @@ tr, td {
     list-style: inside;
     width:90%;
     margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.guide-list-num {
+    width:90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .signature {
