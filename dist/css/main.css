@@ -200,3 +200,17 @@ html {
 .single-card {
     padding-right: 9%;
 }
+
+.single-left-card {
+    padding-right: 4%;
+}
+
+.single-middle-card {
+    padding-right: 5.5%;
+    padding-left: 0;
+    margin-left: -1%;
+}
+
+.comingsoon {
+    padding-left: 40%;
+}
