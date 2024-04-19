@@ -197,6 +197,33 @@ html {
     margin-bottom: 12.5px;
 }
 
+.card {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+    border-radius: 30px;
+    border: 1px black solid;
+}
+
+.card img {
+    flood-color: white;
+    border-radius: 30px;
+    border-bottom: 1px black solid;
+    height: 50%;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 80%;
+    left: 16px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: black;
+}
+
 .single-card {
     padding-right: 9%;
 }
@@ -213,4 +240,93 @@ html {
 
 .comingsoon {
     padding-left: 40%;
+}
+
+.learnmore-div {
+    bottom: 6px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.learnmore-btn {
+    width: 50%;
+    height: 35%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-left: 25%;
+    margin-top: 8%;
+    background: black;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.learnmore-txt {
+    color: white;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 700;
+    padding-left: 3%;
+    text-align: center;
+}
+
+.big-item {
+    width: 80%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visitsite-btn {
+    background: black;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+.visitsite-div {
+    color: white;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.visitsite-div a {
+    text-decoration: none;
+    color: white;
+}
+
+.visit-resources {
+    margin-bottom: 8%;
+    background: black;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 2em;
+}
+
+.card-guide-title {
+    position: absolute;
+    bottom: 80%;
+    left: 16px;
+}
+
+.card-guide-author {
+    position: absolute;
+    bottom: 60%;
+    left: 16px;
 }

@@ -65,76 +65,64 @@ http://www.templatemo.com/tm-518-sentra
     <div class="sidebar-navigation hidde-sm hidden-xs" style="top:0%;height: 100%;padding-top: 20%;">
         <nav>
             <ul>
-                <li>
-                    <a href="mypage.html">
-                        <!-- <span class="circle"></span> -->
+                <li onclick="location.href='home.html'" style="cursor: pointer;">
+                    <a>
                         Home
                     </a>
                 </li>
 
-                <li>
-                    <a href="#featured">
-                        <!-- <span class="circle"></span> -->
+                <li onclick="location.href='contributor.html'" style="cursor: pointer;">
+                    <a>
                         About the creators/ contributors
                     </a>
                 </li>
-                <li>
-                    <a href="resources.html">
-                        <span class="circle"></span>
+                <li onclick="location.href='beginnersguide.html'" style="cursor: pointer;">
+                    <a>
                         Beginner's guides
                     </a>
                 </li>
-                <li>
-                    <a href="#video">
-                        <span class="circle"></span>
+                <li onclick="location.href='learnToCode.html'" style="cursor: pointer;">
+                    <a>
                         Learn to code
                     </a>
                 </li>
-                <li>
-                    <a href="#blog">
-                        <span class="circle"></span>
+                <li onclick="location.href='findCommunity.html'" style="cursor: pointer;">
+                    <a>
                         Find community
                     </a>
                 </li>
-                <li>
-                    <a href="#contact">
-                        <span class="circle"></span>
+                <li onclick="location.href='CSatW.html'" style="cursor: pointer;">
+                    <a>
                         CS at Wellesley
                     </a>
                 </li>
-                <li>
-                    <a href="#contact">
-                        <span class="circle"></span>
+                <li onclick="location.href='jobIntern.html'" style="cursor: pointer;">
+                    <a>
                         Find jobs and internships
                     </a>
                 </li>
-                <li>
-                    <a href="#contact">
-                        <span class="circle"></span>
+                <li onclick="location.href='findIDE.html'" style="cursor: pointer;">
+                    <a>
                         Find IDEs
                     </a>
                 </li>
-                <li>
-                    <a href="#contact">
-                        <span class="circle"></span>
+                <li onclick="location.href='websiteBuilding.html'" style="cursor: pointer;">
+                    <a>
                         Website building
                     </a>
                 </li>
-                <li>
-                    <a href="#contact">
-                        <span class="circle"></span>
+                <li onclick="location.href='nonprofit.html'" style="cursor: pointer;">
+                    <a>
                         Find nonprofits
                     </a>
                 </li>
-                <li>
-                    <a href="#contact">
-                        <span class="circle"></span>
+                <li onclick="location.href='newsletter.html'" style="cursor: pointer;">
+                    <a>
                         Find newsletters
                     </a>
                 </li>
                 <li>
                     <a href="#contact">
-                        <span class="circle"></span>
                         Contact us
                     </a>
                 </li>
@@ -147,15 +135,15 @@ http://www.templatemo.com/tm-518-sentra
         <section style="padding-left:21%;padding-top: 7%;">
 
             <div class="Welcome"
-            style="width: auto; justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex; margin-top: -110px">
+                style="width: auto; justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex; margin-top: -110px">
                 <div class="Frame224"
-                style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+                    style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
                     <div class="Title"
                         style="width: 420px;color: black;font-size: 45px;font-weight: 500;text-align: left;word-wrap: break-word;">
                         Introduction to <strong>APIs</strong> <br>
                         (<strong>A</strong>pplication <strong>P</strong>rogramming <strong>I</strong>nterfaces)
                     </div>
-                    
+
                 </div>
 
                 <img src="img/apis_intro.png" class="beginnerLandingImage"
@@ -166,17 +154,20 @@ http://www.templatemo.com/tm-518-sentra
 
             <div class="button-navigation">
                 <button class="article-navigation" onClick="document.getElementById('apis').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">WHAT ARE APIS?</button>
+                    style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">WHAT
+                    ARE APIS?</button>
                 <button class="article-navigation" onClick="document.getElementById('architecture').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">ARCHITECTURE, POPULAR APIs, AND USE</button>
+                    style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">ARCHITECTURE,
+                    POPULAR APIs, AND USE</button>
                 <button class="article-navigation" onClick="document.getElementById('history').scrollIntoView();"
-                style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">BRIEF HISTORY</button>
+                    style="box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);border-radius: 8px;justify-content: center;align-items: center;">BRIEF
+                    HISTORY</button>
             </div>
             <div id="arrow-down">
                 <img src="img/Arrow Down 1.png" class="arrow-down"
                     onclick="document.getElementById('apis').scrollIntoView();">
             </div>
-            
+
 
         </section>
     </div>
@@ -187,60 +178,80 @@ http://www.templatemo.com/tm-518-sentra
             <h1 class="guide-title" id="apis">What are APIs? Why are they useful?</h1>
             <section class="article-content" style="font-size:20px; text-align:left;">
                 <p class="article-text">
-                    Application Programming Interfaces or APIs refer to a collection of protocols, and tools that facilitate the development of software applications. These interfaces establish guidelines on how different software components should interact and communicate with each other. Essentially, they serve as conduits or infrastructure that connect and facilitate information exchange between various systems while adhering to an agreed-upon set of rules and protocols. 
+                    Application Programming Interfaces or APIs refer to a collection of protocols, and tools that
+                    facilitate the development of software applications. These interfaces establish guidelines on how
+                    different software components should interact and communicate with each other. Essentially, they
+                    serve as conduits or infrastructure that connect and facilitate information exchange between various
+                    systems while adhering to an agreed-upon set of rules and protocols.
                 </p>
 
 
                 <p class="article-text">
-                    Think of a restaurant: you are the client, the waiter is the API, and the kitchen is the database. 
+                    Think of a restaurant: you are the client, the waiter is the API, and the kitchen is the database.
                 </p>
 
                 <p class="article-text" style="margin-bottom:0%;">
-                    APIs are highly versatile and can be implemented as web services that leverage HTTP requests to communicate over the internet or as libraries that can be seamlessly integrated into an application. They provide a layer of abstraction between different software components, which makes them highly accessible and easy to use.
+                    APIs are highly versatile and can be implemented as web services that leverage HTTP requests to
+                    communicate over the internet or as libraries that can be seamlessly integrated into an application.
+                    They provide a layer of abstraction between different software components, which makes them highly
+                    accessible and easy to use.
                 </p>
-            </section>        
+            </section>
         </section>
 
         <section class="article-section">
             <h1 class="guide-title" id="architecture">API architectures, popular APIs and how you use them</h1>
             <section class="article-content" style="font-size:20px; text-align:left;">
                 <p class="article-text">
-                    There are four common types of API architectures/protocols: REST, SOAP, RPC, and GraphQL. 
+                    There are four common types of API architectures/protocols: REST, SOAP, RPC, and GraphQL.
                 </p>
 
                 <p class="article-text">
-                    <strong>REST (Representational State Transfer)</strong>: a simple protocol that uses HTTP to communicate between client and server. RESTful APIs use standard HTTP methods like GET, POST, PUT, and DELETE to interact with resources and return data in a variety of formats, such as JSON or XML.
+                    <strong>REST (Representational State Transfer)</strong>: a simple protocol that uses HTTP to
+                    communicate between client and server. RESTful APIs use standard HTTP methods like GET, POST, PUT,
+                    and DELETE to interact with resources and return data in a variety of formats, such as JSON or XML.
                 </p>
 
                 <p class="article-text">
-                    <strong>SOAP (Simple Object Access Protocol)</strong>: an XML-based protocol that is used to exchange structured information between applications. SOAP APIs use a messaging format that includes a header, a body, and an envelope to define the structure of the data being exchanged.
+                    <strong>SOAP (Simple Object Access Protocol)</strong>: an XML-based protocol that is used to
+                    exchange structured information between applications. SOAP APIs use a messaging format that includes
+                    a header, a body, and an envelope to define the structure of the data being exchanged.
                 </p>
 
                 <p class="article-text">
-                    <strong>RPC (Remote Procedure Call)</strong>: a protocol that enables communication between different applications or processes by allowing a program to execute a procedure on a remote server or client.
+                    <strong>RPC (Remote Procedure Call)</strong>: a protocol that enables communication between
+                    different applications or processes by allowing a program to execute a procedure on a remote server
+                    or client.
                 </p>
 
                 <p class="article-text">
-                    <strong>GraphQL API</strong>: a query language for APIs that allows clients to request only the data they need, reducing the amount of data transferred over the network. It provides a powerful and flexible way to interact with APIs and is especially useful for building client-side applications that require high-performance data loading.
+                    <strong>GraphQL API</strong>: a query language for APIs that allows clients to request only the data
+                    they need, reducing the amount of data transferred over the network. It provides a powerful and
+                    flexible way to interact with APIs and is especially useful for building client-side applications
+                    that require high-performance data loading.
                 </p>
-            </section> 
-            <h2 class="guide-subtitle">Popular APIs</h2>  
+            </section>
+            <h2 class="guide-subtitle">Popular APIs</h2>
             <section class="article-content" style="font-size:20px; text-align:left;">
                 <p class="article-text">
-                        <strong>Google Maps API</strong>: allows developers access to Google Maps data, allowing them to integrate maps and location-based features into their applications.
-                    </p>
+                    <strong>Google Maps API</strong>: allows developers access to Google Maps data, allowing them to
+                    integrate maps and location-based features into their applications.
+                </p>
 
-                    <p class="article-text">
-                        <strong>GitHub API</strong>: allows developers access to GitHub data, including repositories, commits, and more.
-                    </p>
+                <p class="article-text">
+                    <strong>GitHub API</strong>: allows developers access to GitHub data, including repositories,
+                    commits, and more.
+                </p>
 
-                    <p class="article-text">
-                        <strong>YouTube API</strong>: allows developers to access YouTube data such as videos, channels, and playlists.
-                    </p>
+                <p class="article-text">
+                    <strong>YouTube API</strong>: allows developers to access YouTube data such as videos, channels, and
+                    playlists.
+                </p>
 
-                    <p class="article-text">
-                        <strong>IMDB API</strong>: allows developers to access IMDB data, including movies, cast and crew, and ratings.
-                    </p>
+                <p class="article-text">
+                    <strong>IMDB API</strong>: allows developers to access IMDB data, including movies, cast and crew,
+                    and ratings.
+                </p>
 
                 <p class="article-text" style="margin-bottom:0%;">
                     Rudimentary Example:
@@ -285,19 +296,29 @@ else:
                 </section>
 
                 <p class="article-text">
-                    In this example, we're making a request to the OpenWeatherMap API to get the current weather data for New York. We're passing in our API key as a parameter, and the API will respond with the weather data in JSON format. We then parse the JSON response and extract the temperature, humidity, and wind speed data, and print it.
+                    In this example, we're making a request to the OpenWeatherMap API to get the current weather data
+                    for New York. We're passing in our API key as a parameter, and the API will respond with the weather
+                    data in JSON format. We then parse the JSON response and extract the temperature, humidity, and wind
+                    speed data, and print it.
                 </p>
-            </section>      
+            </section>
         </section>
 
         <section class="article-section">
             <h1 class="guide-title" id="history">Brief History</h1>
             <section class="article-content" style="font-size:20px; text-align:left;">
                 <p class="article-text">
-                    APIs have been around since the early days of computing. However, with the emergence of the internet, the use of APIs became more prevalent, especially because applications needed to communicate across various platforms. Initially, Simple Object Access Protocol (SOAP) was a popular web API, but it was later replaced by Representational State Transfer (REST), which is more lightweight and flexible. RESTful APIs, which emerged in the 2000s, made it simpler for developers to create and access APIs using the HTTP protocol. Salesforce.com introduced the first web API in 2000. In modern software development, APIs are an essential component, allowing developers to easily integrate different services and databases into their applications, and they continue to evolve.
+                    APIs have been around since the early days of computing. However, with the emergence of the
+                    internet, the use of APIs became more prevalent, especially because applications needed to
+                    communicate across various platforms. Initially, Simple Object Access Protocol (SOAP) was a popular
+                    web API, but it was later replaced by Representational State Transfer (REST), which is more
+                    lightweight and flexible. RESTful APIs, which emerged in the 2000s, made it simpler for developers
+                    to create and access APIs using the HTTP protocol. Salesforce.com introduced the first web API in
+                    2000. In modern software development, APIs are an essential component, allowing developers to easily
+                    integrate different services and databases into their applications, and they continue to evolve.
                 </p>
-            </section>    
-            
+            </section>
+
             <h2 class="guide-subtitle">Some Wellesley Courses that use APIs</h2>
             <section class="article-content" style="font-size:20px; text-align:left;">
                 <ul class="guide-list">
@@ -307,85 +328,89 @@ else:
                 </ul><br>
 
                 <p class="article-text">
-                    Though they may seem intimidating at first, APIs are really fun to explore. Try making a simple web application using your favorite API to get familiar. Refer to the additional resources below to get started. Good Luck :)
+                    Though they may seem intimidating at first, APIs are really fun to explore. Try making a simple web
+                    application using your favorite API to get familiar. Refer to the additional resources below to get
+                    started. Good Luck :)
                 </p>
-            </section>   
-            
+            </section>
+
             <h2 class="guide-subtitle">Additional Resources</h2>
             <section class="article-content" style="font-size:20px; text-align:left;">
                 <p class="article-text">
-                    <a href="https://technologyadvice.com/blog/information-technology/how-to-use-an-api/">How to use an API?</a>
+                    <a href="https://technologyadvice.com/blog/information-technology/how-to-use-an-api/">How to use an
+                        API?</a>
                 </p>
 
                 <p class="article-text">
-                    <a href="https://appmaster.io/blog/apis-for-beginners-how-to-use-an-api-a-complete-guide">APIs for Beginner's Guide</a>
+                    <a href="https://appmaster.io/blog/apis-for-beginners-how-to-use-an-api-a-complete-guide">APIs for
+                        Beginner's Guide</a>
                 </p>
 
                 <p class="article-text">
                     <a href="https://www.w3schools.com/js/js_api_intro.asp">Web APIs</a>
                 </p>
-            </section>   
+            </section>
 
         </section>
 
 
-    <section id="contact" class="content-section">
-        <div id="contact-content">
-            <div class="section-heading">
-                <div class="section-text">
-                    <h1><em>Contact Us</em></h1>
-    
-                </div>
-                <br>
-                <div class="heading-text">
-                    <p class="contact-text">This site is only possible through the efforts of students and educators
-                        like you. If you have a resource you think could be added to the page,
-                        an idea for a page on TransparenCS, or any critiques, suggestions, funny
-                        memes, questions, or poems, please contact us!
-                    </p>
-                </div>
-    
-                <img src="img/Cool Kids Study.png" class="contact-image"></img>
-    
-            </div>
-    
-            <div class="section-content">
-                <form id="contact" action="#" method="post">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <fieldset>
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Your name..."
-                                    required="">
-                            </fieldset>
-                        </div>
-                        <div class="col-md-4">
-                            <fieldset>
-                                <input name="email" type="email" class="form-control" id="email" placeholder="Your email..."
-                                    required="">
-                            </fieldset>
-                        </div>
-                        <div class="col-md-4">
-                            <fieldset>
-                                <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..."
-                                    required="">
-                            </fieldset>
-                        </div>
-                        <div class="col-md-12">
-                            <fieldset>
-                                <textarea name="message" rows="6" class="form-control" id="message"
-                                    placeholder="Your message..." required=""></textarea>
-                            </fieldset>
-                        </div>
-                        <div class="col-md-12">
-                            <fieldset>
-                                <button type="submit" id="form-submit" class="btn">Send Message Now</button>
-                            </fieldset>
-                        </div>
+        <section id="contact" class="content-section">
+            <div id="contact-content">
+                <div class="section-heading">
+                    <div class="section-text">
+                        <h1><em>Contact Us</em></h1>
+
                     </div>
-                </form>
+                    <br>
+                    <div class="heading-text">
+                        <p class="contact-text">This site is only possible through the efforts of students and educators
+                            like you. If you have a resource you think could be added to the page,
+                            an idea for a page on TransparenCS, or any critiques, suggestions, funny
+                            memes, questions, or poems, please contact us!
+                        </p>
+                    </div>
+
+                    <img src="img/Cool Kids Study.png" class="contact-image"></img>
+
+                </div>
+
+                <div class="section-content">
+                    <form id="contact" action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name"
+                                        placeholder="Your name..." required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email"
+                                        placeholder="Your email..." required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset>
+                                    <input name="subject" type="text" class="form-control" id="subject"
+                                        placeholder="Subject..." required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message"
+                                        placeholder="Your message..." required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
         <section class="footer">
             <p>Copyright &copy; 2018. Design: <a href="http://templatemo.com/tm-518-sentra" target="_blank">Sentra</a> |
