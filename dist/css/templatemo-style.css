@@ -169,6 +169,7 @@ header {
   color: #fff;
   box-shadow: none;
   border: none;
+  padding: 1px;
 }
 
 #main-nav ul li a:hover {
@@ -390,7 +391,7 @@ nav .active-section span {
 
 .item {
   width: 100%;
-  height: 65vh; 
+  height: 55vh; 
   /* height: 100vh; */
   background-position: center center;
   background-size: cover;

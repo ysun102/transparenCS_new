@@ -24,6 +24,25 @@ html {
     word-wrap: break-word;
 }
 
+.welcome-txt {
+    float: left;
+    margin-left: 14%;
+    font-size: 47px;
+    font-weight: 500;
+    margin-top: 8%;
+    margin-right: -10%;
+}
+
+.landing-TCS {
+    width: 47%;
+}
+
+.landing-txt {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 10%;
+}
+
 #checkout {
     /* display: inline-grid; */
     align-items: center;
@@ -210,6 +229,7 @@ html {
     border-radius: 30px;
     border-bottom: 1px black solid;
     height: 50%;
+    width: 100%;
 }
 
 .card-title {
